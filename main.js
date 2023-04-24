@@ -5,9 +5,9 @@ elements.forEach(element => {
         let dropdownContent = dropdown.querySelector('.dropdown-content');
         elements.forEach((otherItem) => {
             if (otherItem !== element) {
-              otherItem.querySelector(".dropdown-content").classList.remove("show");
+                otherItem.querySelector(".dropdown-content").classList.remove("show");
             }
-          });
+        });
         if (dropdownContent.classList.contains('show')) {
             dropdownContent.classList.remove('show');
         } else {
@@ -20,7 +20,7 @@ document.addEventListener('click', event => {
     let dropdownContents = document.querySelectorAll('.dropdown-content');
     dropdownContents.forEach(dropdownContent => {
         let dropdown = dropdownContent.closest('.dropdown');
-        if (!dropdown.contains(event.target)) {
+        if (dropdown && !dropdown.contains(event.target)) {
             dropdownContent.classList.remove('show');
         }
     });

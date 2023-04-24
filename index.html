@@ -50,21 +50,26 @@
         <div class="header__nav">
             <div id="site_nav">
                 <ul class="nav">
-                    <li class="dropdown_hover"><a href="#">HOME<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <li class="dropdown_hover active">
+                        <a class="menu_content" href="#">
+                            HOME
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
                         <div class="dropdown-content">
                             <div>Molla</div>
                             <div>Flatsome</div>
                             <div>Avada</div>
                         </div>
                     </li>
-                    <li class="dropdown_hover"><a href="#">SHOP<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <li class="dropdown_hover"><a class="menu_content" href="#">SHOP<i class="fa fa-angle-down"
+                                aria-hidden="true"></i></a>
                         <div class="dropdown-content">
                             <div>Shop 1</div>
                             <div>Shop 2</div>
                             <div>Shop 3</div>
                         </div>
                     </li>
-                    <li class="dropdown_hover"><a href="#">PRODUCT<i class="fa fa-angle-down"
+                    <li class="dropdown_hover"><a class="menu_content" href="#">PRODUCT<i class="fa fa-angle-down"
                                 aria-hidden="true"></i></a>
                         <div class="dropdown-content">
                             <div>Vie</div>
@@ -72,15 +77,16 @@
                             <div>JPY</div>
                         </div>
                     </li>
-                    <li class="dropdown_hover"><a href="#">PAGES<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <li class="dropdown_hover"><a class="menu_content" href="#">PAGES<i class="fa fa-angle-down"
+                                aria-hidden="true"></i></a>
                         <div class="dropdown-content">
                             <div>Vie</div>
                             <div>RUB</div>
                             <div>JPY</div>
                         </div>
                     </li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">ELEMENTS</a></li>
+                    <li class="dropdown_hover"><a class="menu_content" href="#">BLOG</a></li>
+                    <li class="dropdown_hover"><a class="menu_content" href="#">ELEMENTS</a></li>
                 </ul>
             </div>
             <div class="header__icons">
@@ -194,7 +200,7 @@
             <div class="category ">
                 <div class="category_title">Currently Popular Items</div>
                 <ul class="category_list">
-                    <li class="category_item">NEW</li>
+                    <li class="category_item active">NEW</li>
                     <li class="category_item">FEATURED</li>
                     <li class="category_item">BEST SELLER</li>
                 </ul>
@@ -212,13 +218,24 @@
                                 <div class="product_second_thumb">
                                     <img class="product_img_second" src="./assets/images/s-product1.jpg" alt="product">
                                 </div>
-                                <div class="add_card">ADD TO CARD</div>
+                                <div class="add_card">
+                                    <img class="svg_icon" src="./assets/images/cart.svg" alt="cart">
+                                    <span>ADD TO CARD</span>
+                                </div>
+                                <div class="cta_btn">
+                                    <div class="wrap_btn">
+                                        <span class="icon heart"><i class="fa-regular fa-heart"></i></span>
+                                        <span class="icon glass"><i class="fa-solid fa-glasses"></i></span>
+                                        <span class="icon shuffle"><i class="fa-solid fa-shuffle"></i></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="product_info">
                                 <a class="product_category" href="#">CLOTHING</a>
-                                <a class="product_title" href="#">Dress</a>
+                                <a class="product_title" href="#">Linen-blend dress</a>
                                 <div class="product_price normal_price" href="#">$60.00</div>
-                                <div class="product_color"><input type="radio"><input type="radio"></div>
+                                <div class="product_color"><input type="radio" class="yellow" name="product1_color"
+                                        checked><input type="radio" class="light_blue" name="product1_color"></div>
                             </div>
                         </a>
                     </div>
@@ -228,17 +245,27 @@
                         <a href="#" class="wrap_thumb">
                             <div class="product_thumb">
                                 <div class="product_primary_thumb">
-                                    <img class="product_img_primary" src="./assets/images/p-product1.jpg" alt="product">
+                                    <img class="product_img_primary" src="./assets/images/p-product2.jpg" alt="product">
                                 </div>
                                 <div class="product_second_thumb">
-                                    <img class="product_img_second" src="./assets/images/s-product1.jpg" alt="product">
+                                    <img class="product_img_second" src="./assets/images/s-product2.jpg" alt="product">
                                 </div>
                                 <div class="sale_badge">Sale</div>
-                                <div class="add_card">ADD TO CARD</div>
+                                <div class="add_card">
+                                    <img class="svg_icon" src="./assets/images/cart.svg" alt="cart">
+                                    <span>ADD TO CARD</span>
+                                </div>
+                                <div class="cta_btn">
+                                    <div class="wrap_btn">
+                                        <span class="icon heart"><i class="fa-regular fa-heart"></i></span>
+                                        <span class="icon glass"><i class="fa-solid fa-glasses"></i></span>
+                                        <span class="icon shuffle"><i class="fa-solid fa-shuffle"></i></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="product_info">
-                                <a class="product_category" href="#">CLOTHING</a>
-                                <a class="product_title" href="#">Dress</a>
+                                <a class="product_category" href="#">Shoes</a>
+                                <a class="product_title" href="#">Sandals with lacing</a>
                                 <div class="product_price_sale">
                                     <span class="now_price">Now $70.00</span><span class="before_sale">Was
                                         $155.00</span>
@@ -252,17 +279,57 @@
                         <a href="#" class="wrap_thumb">
                             <div class="product_thumb">
                                 <div class="product_primary_thumb">
-                                    <img class="product_img_primary" src="./assets/images/p-product1.jpg" alt="product">
+                                    <img class="product_img_primary" src="./assets/images/p-product3.jpg" alt="product">
                                 </div>
                                 <div class="product_second_thumb">
-                                    <img class="product_img_second" src="./assets/images/s-product1.jpg" alt="product">
+                                    <img class="product_img_second" src="./assets/images/s-product3.jpg" alt="product">
+                                </div>
+                                <div class="add_card">
+                                    <img class="svg_icon" src="./assets/images/cart.svg" alt="cart">
+                                    <span>ADD TO CARD</span>
+                                </div>
+                                <div class="cta_btn">
+                                    <div class="wrap_btn">
+                                        <span class="icon heart"><i class="fa-regular fa-heart"></i></span>
+                                        <span class="icon glass"><i class="fa-solid fa-glasses"></i></span>
+                                        <span class="icon shuffle"><i class="fa-solid fa-shuffle"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_info">
+                                <a class="product_category" href="#">HANDBAGS</a>
+                                <a class="product_title" href="#">Paper straw shopper</a>
+                                <div class="product_price normal_price" href="#">$398.00</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="product">
+                        <a href="#" class="wrap_thumb">
+                            <div class="product_thumb">
+                                <div class="product_primary_thumb">
+                                    <img class="product_img_primary" src="./assets/images/p-product4.jpg" alt="product">
+                                </div>
+                                <div class="product_second_thumb">
+                                    <img class="product_img_second" src="./assets/images/s-product4.jpg" alt="product">
+                                </div>
+                                <div class="add_card">
+                                    <img class="svg_icon" src="./assets/images/cart.svg" alt="cart">
+                                    <span>ADD TO CARD</span>
+                                </div>
+                                <div class="cta_btn">
+                                    <div class="wrap_btn">
+                                        <span class="icon heart"><i class="fa-regular fa-heart"></i></span>
+                                        <span class="icon glass"><i class="fa-solid fa-glasses"></i></span>
+                                        <span class="icon shuffle"><i class="fa-solid fa-shuffle"></i></span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="product_info">
                                 <a class="product_category" href="#">CLOTHING</a>
                                 <a class="product_title" href="#">Dress</a>
-                                <a class="product_price" href="#">$60</a>
-                                <div class="product_color"><input type="radio"></div>
+                                <div class="product_price normal_price" href="#">$370.00</div>
                             </div>
                         </a>
                     </div>
@@ -277,12 +344,58 @@
                                 <div class="product_second_thumb">
                                     <img class="product_img_second" src="./assets/images/s-product1.jpg" alt="product">
                                 </div>
+                                <div class="add_card">
+                                    <img class="svg_icon" src="./assets/images/cart.svg" alt="cart">
+                                    <span>ADD TO CARD</span>
+                                </div>
+                                <div class="cta_btn">
+                                    <div class="wrap_btn">
+                                        <span class="icon heart"><i class="fa-regular fa-heart"></i></span>
+                                        <span class="icon glass"><i class="fa-solid fa-glasses"></i></span>
+                                        <span class="icon shuffle"><i class="fa-solid fa-shuffle"></i></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="product_info">
                                 <a class="product_category" href="#">CLOTHING</a>
-                                <a class="product_title" href="#">Dress</a>
-                                <a class="product_price" href="#">$60</a>
-                                <div class="product_color"><input type="radio"></div>
+                                <a class="product_title" href="#">Linen-blend dress</a>
+                                <div class="product_price normal_price" href="#">$60.00</div>
+                                <div class="product_color"><input type="radio" class="yellow" name="product2_color"
+                                        checked><input type="radio" class="light_blue" name="product2_color"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="product sale">
+                        <a href="#" class="wrap_thumb">
+                            <div class="product_thumb">
+                                <div class="product_primary_thumb">
+                                    <img class="product_img_primary" src="./assets/images/p-product2.jpg" alt="product">
+                                </div>
+                                <div class="product_second_thumb">
+                                    <img class="product_img_second" src="./assets/images/s-product2.jpg" alt="product">
+                                </div>
+                                <div class="sale_badge">Sale</div>
+                                <div class="add_card">
+                                    <img class="svg_icon" src="./assets/images/cart.svg" alt="cart">
+                                    <span>ADD TO CARD</span>
+                                </div>
+                                <div class="cta_btn">
+                                    <div class="wrap_btn">
+                                        <span class="icon heart"><i class="fa-regular fa-heart"></i></span>
+                                        <span class="icon glass"><i class="fa-solid fa-glasses"></i></span>
+                                        <span class="icon shuffle"><i class="fa-solid fa-shuffle"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_info">
+                                <a class="product_category" href="#">Shoes</a>
+                                <a class="product_title" href="#">Sandals with lacing</a>
+                                <div class="product_price_sale">
+                                    <span class="now_price">Now $70.00</span><span class="before_sale">Was
+                                        $155.00</span>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -292,17 +405,27 @@
                         <a href="#" class="wrap_thumb">
                             <div class="product_thumb">
                                 <div class="product_primary_thumb">
-                                    <img class="product_img_primary" src="./assets/images/p-product1.jpg" alt="product">
+                                    <img class="product_img_primary" src="./assets/images/p-product3.jpg" alt="product">
                                 </div>
                                 <div class="product_second_thumb">
-                                    <img class="product_img_second" src="./assets/images/s-product1.jpg" alt="product">
+                                    <img class="product_img_second" src="./assets/images/s-product3.jpg" alt="product">
+                                </div>
+                                <div class="add_card">
+                                    <img class="svg_icon" src="./assets/images/cart.svg" alt="cart">
+                                    <span>ADD TO CARD</span>
+                                </div>
+                                <div class="cta_btn">
+                                    <div class="wrap_btn">
+                                        <span class="icon heart"><i class="fa-regular fa-heart"></i></span>
+                                        <span class="icon glass"><i class="fa-solid fa-glasses"></i></span>
+                                        <span class="icon shuffle"><i class="fa-solid fa-shuffle"></i></span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="product_info">
-                                <a class="product_category" href="#">CLOTHING</a>
-                                <a class="product_title" href="#">Dress</a>
-                                <a class="product_price" href="#">$60</a>
-                                <div class="product_color"><input type="radio"></div>
+                                <a class="product_category" href="#">HANDBAGS</a>
+                                <a class="product_title" href="#">Paper straw shopper</a>
+                                <div class="product_price normal_price" href="#">$398.00</div>
                             </div>
                         </a>
                     </div>
@@ -312,58 +435,27 @@
                         <a href="#" class="wrap_thumb">
                             <div class="product_thumb">
                                 <div class="product_primary_thumb">
-                                    <img class="product_img_primary" src="./assets/images/p-product1.jpg" alt="product">
+                                    <img class="product_img_primary" src="./assets/images/p-product4.jpg" alt="product">
                                 </div>
                                 <div class="product_second_thumb">
-                                    <img class="product_img_second" src="./assets/images/s-product1.jpg" alt="product">
+                                    <img class="product_img_second" src="./assets/images/s-product4.jpg" alt="product">
+                                </div>
+                                <div class="add_card">
+                                    <img class="svg_icon" src="./assets/images/cart.svg" alt="cart">
+                                    <span>ADD TO CARD</span>
+                                </div>
+                                <div class="cta_btn">
+                                    <div class="wrap_btn">
+                                        <span class="icon heart"><i class="fa-regular fa-heart"></i></span>
+                                        <span class="icon glass"><i class="fa-solid fa-glasses"></i></span>
+                                        <span class="icon shuffle"><i class="fa-solid fa-shuffle"></i></span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="product_info">
                                 <a class="product_category" href="#">CLOTHING</a>
                                 <a class="product_title" href="#">Dress</a>
-                                <a class="product_price" href="#">$60</a>
-                                <div class="product_color"><input type="radio"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="grid_item">
-                    <div class="product">
-                        <a href="#" class="wrap_thumb">
-                            <div class="product_thumb">
-                                <div class="product_primary_thumb">
-                                    <img class="product_img_primary" src="./assets/images/p-product1.jpg" alt="product">
-                                </div>
-                                <div class="product_second_thumb">
-                                    <img class="product_img_second" src="./assets/images/s-product1.jpg" alt="product">
-                                </div>
-                            </div>
-                            <div class="product_info">
-                                <a class="product_category" href="#">CLOTHING</a>
-                                <a class="product_title" href="#">Dress</a>
-                                <a class="product_price" href="#">$60</a>
-                                <div class="product_color"><input type="radio"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="grid_item">
-                    <div class="product">
-                        <a href="#" class="wrap_thumb">
-                            <div class="product_thumb">
-                                <div class="product_primary_thumb">
-                                    <img class="product_img_primary" src="./assets/images/p-product1.jpg" alt="product">
-                                </div>
-                                <div class="product_second_thumb">
-                                    <img class="product_img_second" src="./assets/images/s-product1.jpg" alt="product">
-                                </div>
-                            </div>
-                            <div class="product_info">
-                                <a class="product_category" href="#">CLOTHING</a>
-                                <a class="product_title" href="#">Dress</a>
-                                <a class="product_price" href="#">$60</a>
-                                <div class="product_color"><input class="color" type="radio"><input class="color"
-                                        type="radio"></div>
+                                <div class="product_price normal_price" href="#">$370.00</div>
                             </div>
                         </a>
                     </div>
@@ -388,36 +480,40 @@
         </div>
         <div class="slide_show">
             <div class="slide_container">
-                <div class="slide_item">
-                    <div class="slide_thumb">
-                        <img class="slide_img" src="./assets/images/p-product1.jpg" alt="posts">
+                <div class="pre_next_button pre"><i class="fa-solid fa-chevron-left fa-2x"></i></i></div>
+                <div class="wrap_slide_item">
+                    <div class="slide_item">
+                        <div class="slide_thumb post1">
+
+                        </div>
+                        <div class="slide_info">
+                            <a class="slide_date" href="#">Nov 22, 2018, 0 Comments</a>
+                            <a class="slide_title" href="#">Sed adipiscing ornare.</a>
+                            <a class="slide_read_more" href="#">Read More</a>
+                        </div>
                     </div>
-                    <div class="slide_info">
-                        <a class="slide_date" href="#">Nov 22, 2018, 0 Comments</a>
-                        <a class="slide_title" href="#">Sed adipiscing ornare.</a>
-                        <a class="slide_read_more" href="#">Read More</a>
+                    <div class="slide_item">
+                        <div class="slide_thumb post2">
+
+                        </div>
+                        <div class="slide_info">
+                            <a class="slide_date" href="#">Nov 22, 2018, 0 Comments</a>
+                            <a class="slide_title" href="#">Sed adipiscing ornare.</a>
+                            <a class="slide_read_more" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="slide_thumb post3">
+
+                        </div>
+                        <div class="slide_info">
+                            <a class="slide_date" href="#">Nov 22, 2018, 0 Comments</a>
+                            <a class="slide_title" href="#">Sed adipiscing ornare.</a>
+                            <a class="slide_read_more" href="#">Read More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="slide_item">
-                    <div class="slide_thumb">
-                        <img class="slide_img" src="./assets/images/p-product1.jpg" alt="posts">
-                    </div>
-                    <div class="slide_info">
-                        <a class="slide_date" href="#">Nov 22, 2018, 0 Comments</a>
-                        <a class="slide_title" href="#">Sed adipiscing ornare.</a>
-                        <a class="slide_read_more" href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="slide_item">
-                    <div class="slide_thumb">
-                        <img class="slide_img" src="./assets/images/p-product1.jpg" alt="posts">
-                    </div>
-                    <div class="slide_info">
-                        <a class="slide_date" href="#">Nov 22, 2018, 0 Comments</a>
-                        <a class="slide_title" href="#">Sed adipiscing ornare.</a>
-                        <a class="slide_read_more" href="#">Read More</a>
-                    </div>
-                </div>
+                <div class="pre_next_button next"><i class="fa-solid fa-chevron-right fa-2x"></i></div>
             </div>
             <div class="wrap_acticles">
                 <div class="more_articles">
@@ -429,33 +525,28 @@
             <div class="heading_title">Follow us on instagram</div>
             <div class="heading_content">Donec nec justo eget felis facilisis fermentum.</div>
         </div>
-        <div class="slide_show">
+        <div class="follow_us">
             <div class="slide_container slide_follow_us">
                 <div class="slide_item">
-                    <div class="slide_thumb">
-                        <img class="slide_img" src="./assets/images/follow_us_1.jpg" alt="instagram">
+                    <div class="slide_thumb follow_us_1">
                     </div>
 
                 </div>
                 <div class="slide_item">
-                    <div class="slide_thumb">
-                        <img class="slide_img" src="./assets/images/follow_us_1.jpg" alt="instagram">
+                    <div class="slide_thumb follow_us_2">
                     </div>
                 </div>
                 <div class="slide_item">
-                    <div class="slide_thumb">
-                        <img class="slide_img" src="./assets/images/follow_us_1.jpg" alt="instagram">
+                    <div class="slide_thumb follow_us_3">
                     </div>
                 </div>
                 <div class="slide_item">
-                    <div class="slide_thumb">
-                        <img class="slide_img" src="./assets/images/follow_us_1.jpg" alt="instagram">
+                    <div class="slide_thumb follow_us_4">
                     </div>
 
                 </div>
                 <div class="slide_item">
-                    <div class="slide_thumb">
-                        <img class="slide_img" src="./assets/images/follow_us_1.jpg" alt="instagram">
+                    <div class="slide_thumb follow_us_5">
                     </div>
 
                 </div>
