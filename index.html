@@ -10,14 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="main.js" defer></script>
     <title>Midas</title>
 </head>
 
 <body>
-    <div class="header --white">
-        <header class="header__content text_gray">
-            <div class="header__content-tel header_layout"><i class="fa-solid fa-phone"></i><span class="tel">Call:
-                    +0123 456 789</span> </div>
+    <div class="header">
+        <header class="header__content">
+            <div class="wrap_tel header_layout">
+                <a href="#" class="header__content-tel "><i class="fa-solid fa-phone"></i><span class="tel">Call:
+                        +0123 456 789</span></a>
+            </div>
             <div class="header__content-logo header_layout"><a href="#"><img src="./assets/images/logo.png"
                         alt="site logo"></a></div>
             <div class="header__content-menu header_layout">
@@ -25,9 +28,21 @@
                     <div class="sub_menu_item"><a href="#">
                             <img class="sub_menu_item--user_login_icon" src="./assets/images/user.svg" alt="user">
                             <span class="user_login">Login</span></a></div>
-                    <div class="sub_menu_item"><a href="#">USD<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="sub_menu_item dropdown"><a href="#"><span class="sub_menu_content">USD</span><i
+                                class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <div>VND</div>
+                            <div>RUB</div>
+                            <div>JPY</div>
+                        </div>
                     </div>
-                    <div class="sub_menu_item"><a href="#">Eng<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="sub_menu_item dropdown"><a href="#"><span class="sub_menu_content">Eng</span><i
+                                class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <div>Vie</div>
+                            <div>Chi</div>
+                            <div>Rus</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -35,10 +50,35 @@
         <div class="header__nav">
             <div id="site_nav">
                 <ul class="nav">
-                    <li><a href="#">HOME<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-                    <li><a href="#">SHOP<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-                    <li><a href="#">PRODUCT<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-                    <li><a href="#">PAGES<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                    <li class="dropdown_hover"><a href="#">HOME<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <div>Molla</div>
+                            <div>Flatsome</div>
+                            <div>Avada</div>
+                        </div>
+                    </li>
+                    <li class="dropdown_hover"><a href="#">SHOP<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <div>Shop 1</div>
+                            <div>Shop 2</div>
+                            <div>Shop 3</div>
+                        </div>
+                    </li>
+                    <li class="dropdown_hover"><a href="#">PRODUCT<i class="fa fa-angle-down"
+                                aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <div>Vie</div>
+                            <div>RUB</div>
+                            <div>JPY</div>
+                        </div>
+                    </li>
+                    <li class="dropdown_hover"><a href="#">PAGES<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <div>Vie</div>
+                            <div>RUB</div>
+                            <div>JPY</div>
+                        </div>
+                    </li>
                     <li><a href="#">BLOG</a></li>
                     <li><a href="#">ELEMENTS</a></li>
                 </ul>
@@ -68,7 +108,7 @@
         </div>
 
     </div>
-    <div class="page_content">
+    <div class="main_content">
         <div class="page_banner">
             <div class="page_banner_layout">
                 <div class="left_banner">
@@ -113,28 +153,39 @@
                 </div>
             </div>
             <div class="service">
-                <div class="service_item free_shipping"><i class="fa-sharp fa-solid fa-rocket fa-2x"></i></i>
+                <div class="service_item free_shipping">
                     <div class="wrap_banner_icon">
-                        <div class="item_title">Free Shipping</div>
-                        <div class="item_subtitle">Oder $50 or more</div>
+                        <i class="fa-sharp fa-solid fa-rocket fa-2x"></i></i>
+                        <div class="banner_icon_content">
+                            <div class="item_title">Free Shipping</div>
+                            <div class="item_subtitle">Oder $50 or more</div>
+                        </div>
                     </div>
                 </div>
-                <div class="service_item free_returns"><i class="fa-solid fa-arrow-rotate-left fa-2x"></i></i>
+                <div class="service_item free_returns">
                     <div class="wrap_banner_icon">
-                        <div class="item_title">Free Returns</div>
-                        <div class="item_subtitle">Winthin 30 days</div>
+                        <i class="fa-solid fa-arrow-rotate-left fa-2x"></i></i>
+                        <div class="banner_icon_content">
+                            <div class="item_title">Free Returns</div>
+                            <div class="item_subtitle">Winthin 30 days</div>
+                        </div>
                     </div>
                 </div>
-                <div class="service_item get_sale"><i class="fa-solid fa-circle-info fa-2x"></i>
+                <div class="service_item get_sale">
                     <div class="wrap_banner_icon">
-                        <div class="item_title">Get 20% Off 1 Item</div>
-                        <div class="item_subtitle">When you sign up</div>
+                        <i class="fa-solid fa-circle-info fa-2x"></i>
+                        <div class="banner_icon_content">
+                            <div class="item_title">Get 20% Off 1 Item</div>
+                            <div class="item_subtitle">When you sign up</div>
+                        </div>
                     </div>
                 </div>
-                <div class="service_item support"><i class="fa-solid fa-life-ring fa-2x"></i></i>
-                    <div class="wrap_banner_icon">
-                        <div class="item_title">We Support</div>
-                        <div class="item_subtitle">24/7 amazing services</div>
+                <div class="service_item support">
+                    <div class="wrap_banner_icon"><i class="fa-solid fa-life-ring fa-2x"></i></i>
+                        <div class="banner_icon_content">
+                            <div class="item_title">We Support</div>
+                            <div class="item_subtitle">24/7 amazing services</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -151,6 +202,71 @@
         </div>
         <div id="products_container">
             <div class="product_list_grid">
+                <div class="grid_item">
+                    <div class="product">
+                        <a href="#" class="wrap_thumb">
+                            <div class="product_thumb">
+                                <div class="product_primary_thumb">
+                                    <img class="product_img_primary" src="./assets/images/p-product1.jpg" alt="product">
+                                </div>
+                                <div class="product_second_thumb">
+                                    <img class="product_img_second" src="./assets/images/s-product1.jpg" alt="product">
+                                </div>
+                                <div class="add_card">ADD TO CARD</div>
+                            </div>
+                            <div class="product_info">
+                                <a class="product_category" href="#">CLOTHING</a>
+                                <a class="product_title" href="#">Dress</a>
+                                <div class="product_price normal_price" href="#">$60.00</div>
+                                <div class="product_color"><input type="radio"><input type="radio"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="product sale">
+                        <a href="#" class="wrap_thumb">
+                            <div class="product_thumb">
+                                <div class="product_primary_thumb">
+                                    <img class="product_img_primary" src="./assets/images/p-product1.jpg" alt="product">
+                                </div>
+                                <div class="product_second_thumb">
+                                    <img class="product_img_second" src="./assets/images/s-product1.jpg" alt="product">
+                                </div>
+                                <div class="sale_badge">Sale</div>
+                                <div class="add_card">ADD TO CARD</div>
+                            </div>
+                            <div class="product_info">
+                                <a class="product_category" href="#">CLOTHING</a>
+                                <a class="product_title" href="#">Dress</a>
+                                <div class="product_price_sale">
+                                    <span class="now_price">Now $70.00</span><span class="before_sale">Was
+                                        $155.00</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="product">
+                        <a href="#" class="wrap_thumb">
+                            <div class="product_thumb">
+                                <div class="product_primary_thumb">
+                                    <img class="product_img_primary" src="./assets/images/p-product1.jpg" alt="product">
+                                </div>
+                                <div class="product_second_thumb">
+                                    <img class="product_img_second" src="./assets/images/s-product1.jpg" alt="product">
+                                </div>
+                            </div>
+                            <div class="product_info">
+                                <a class="product_category" href="#">CLOTHING</a>
+                                <a class="product_title" href="#">Dress</a>
+                                <a class="product_price" href="#">$60</a>
+                                <div class="product_color"><input type="radio"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
                 <div class="grid_item">
                     <div class="product">
                         <a href="#" class="wrap_thumb">
@@ -345,19 +461,21 @@
                 </div>
             </div>
         </div>
-        <footer id="page_footer">
-            <div class="wrap_footer">
-                <div class="copyright">Copyright © 2019 Midas Store. All Rights Reserved. <a class="terms" href="#">Terms Of Use</a> | <a class="policy"  href="#">Privacy Policy</a>
-                </div>
-                <div class="social_media">
-                    <a class="social_media_item facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a class="social_media_item twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a class="social_media_item instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="social_media_item youtube" href="#"><i class="fa-brands fa-youtube"></i></a>
-                    <a class="social_media_item pinterest" href="#"><i class="fa-brands fa-pinterest"></i></a>
-                </div>
+    </div>
+    <footer class="footer">
+        <div class="wrap_footer">
+            <div class="copyright">Copyright © 2019 Midas Store. All Rights Reserved. <a class="terms" href="#">Terms Of
+                    Use</a> | <a class="policy" href="#">Privacy Policy</a>
             </div>
-        </footer>
+            <div class="social_media">
+                <a class="social_media_item facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="social_media_item twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a class="social_media_item instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a class="social_media_item youtube" href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a class="social_media_item pinterest" href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
