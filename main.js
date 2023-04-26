@@ -25,4 +25,11 @@ document.addEventListener('click', event => {
         }
     });
 });
-
+//open sideBar
+document.querySelector('.menu_bar').addEventListener('click', () => {
+    document.getElementById("sideBar").classList.add('active');
+});
+//close sideBar
+document.querySelector('.closeSideBar').addEventListener('click', () => {
+    document.getElementById("sideBar").classList.remove('active');
+});

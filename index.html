@@ -31,23 +31,24 @@
                     <div class="sub_menu_item dropdown"><a href="#"><span class="sub_menu_content">USD</span><i
                                 class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <div class="dropdown-content">
-                            <div>VND</div>
-                            <div>RUB</div>
-                            <div>JPY</div>
+                            <div class="dropdown_item">VND</div>
+                            <div class="dropdown_item">RUB</div>
+                            <div class="dropdown_item">JPY</div>
                         </div>
                     </div>
                     <div class="sub_menu_item dropdown"><a href="#"><span class="sub_menu_content">Eng</span><i
                                 class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <div class="dropdown-content">
-                            <div>Vie</div>
-                            <div>Chi</div>
-                            <div>Rus</div>
+                            <div class="dropdown_item">Vie</div>
+                            <div class="dropdown_item">Chi</div>
+                            <div class="dropdown_item">Rus</div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         <div class="header__nav">
+            <div class="menu_bar"><i class="fa-solid fa-bars fa-2x"></i></div>
             <div id="site_nav">
                 <ul class="nav">
                     <li class="dropdown_hover active">
@@ -56,33 +57,33 @@
                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-content">
-                            <div>Molla</div>
-                            <div>Flatsome</div>
-                            <div>Avada</div>
+                            <div class="dropdown_item">Molla</div>
+                            <div class="dropdown_item">Flatsome</div>
+                            <div class="dropdown_item">Avada</div>
                         </div>
                     </li>
                     <li class="dropdown_hover"><a class="menu_content" href="#">SHOP<i class="fa fa-angle-down"
                                 aria-hidden="true"></i></a>
                         <div class="dropdown-content">
-                            <div>Shop 1</div>
-                            <div>Shop 2</div>
-                            <div>Shop 3</div>
+                            <div class="dropdown_item">Shop 1</div>
+                            <div class="dropdown_item">Shop 2</div>
+                            <div class="dropdown_item">Shop 3</div>
                         </div>
                     </li>
                     <li class="dropdown_hover"><a class="menu_content" href="#">PRODUCT<i class="fa fa-angle-down"
                                 aria-hidden="true"></i></a>
                         <div class="dropdown-content">
-                            <div>Vie</div>
-                            <div>RUB</div>
-                            <div>JPY</div>
+                            <div class="dropdown_item">Vie</div>
+                            <div class="dropdown_item">RUB</div>
+                            <div class="dropdown_item">JPY</div>
                         </div>
                     </li>
                     <li class="dropdown_hover"><a class="menu_content" href="#">PAGES<i class="fa fa-angle-down"
                                 aria-hidden="true"></i></a>
                         <div class="dropdown-content">
-                            <div>Vie</div>
-                            <div>RUB</div>
-                            <div>JPY</div>
+                            <div class="dropdown_item">Vie</div>
+                            <div class="dropdown_item">RUB</div>
+                            <div class="dropdown_item">JPY</div>
                         </div>
                     </li>
                     <li class="dropdown_hover"><a class="menu_content" href="#">BLOG</a></li>
@@ -92,7 +93,7 @@
             <div class="header__icons">
                 <div class="wrap_search">
                     <input type="text" id="search_input" placeholder="Search in...">
-                    <a href="#" class="search_icon_link">
+                    <a href="#" class="search_icon_btn">
                         <span class="header__icons--search search_icon">
                             <img class="svg_icon" src="./assets/images/search.svg" alt="search">
                         </span>
@@ -158,7 +159,9 @@
                     </div>
                 </div>
             </div>
-            <div class="service container">
+        </div>
+        <div class="service">
+            <div class="list_service  container">
                 <div class="service_item free_shipping">
                     <div class="wrap_banner_icon">
                         <i class="fa-sharp fa-solid fa-rocket fa-2x"></i></i>
@@ -195,6 +198,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="shop_container">
             <div class="category ">
@@ -564,6 +568,55 @@
                 <a class="social_media_item instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a class="social_media_item youtube" href="#"><i class="fa-brands fa-youtube"></i></a>
                 <a class="social_media_item pinterest" href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+        <div id="sideBar" class="sidenav">
+            <span class="closeSideBar">&times;</span>
+            <div class="sideBar_content">
+                <div class="wrap_search">
+                    <input type="text" class="sideBar_search_input" placeholder="Search in...">
+                    <div class="search_icon_btn">
+                        <span class="header__icons--search search_icon">
+                            <img class="svg_icon" src="./assets/images/search.svg" alt="search">
+                        </span>
+                    </div>
+                </div>
+                <div class="sideBar_menu">
+                    <div class="menu_title">MENU</div>
+                    <div class="menu_item">
+                        <div class="item">
+                            <a class="menu_content" href="#">
+                                HOME
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="menu_content" href="#">SHOP<i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="item"><a class="menu_content" href="#">PRODUCT<i class="fa fa-angle-down"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="item"><a class="menu_content" href="#">PAGES<i class="fa fa-angle-down"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="item"><a class="menu_content" href="#">BLOG</a></div>
+                        <div class="item"><a class="menu_content" href="#">ELEMENTS</a></div>
+                        <div class="wrap_tel">
+                            <a href="#" class="header__content-tel "><i class="fa-solid fa-phone"></i><span
+                                    class="tel">Call:
+                                    +0123 456 789</span></a>
+                        </div>
+                        <div class="social_media">
+                            <a class="social_media_item facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="social_media_item twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="social_media_item instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="social_media_item youtube" href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a class="social_media_item pinterest" href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
