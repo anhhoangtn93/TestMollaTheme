@@ -42,7 +42,7 @@ body .container {
   max-width: 1168px;
 }
 body .header {
-  height: 140px;
+  min-height: 140px;
   margin: 0 auto;
 }
 body .header .header__content {
@@ -699,8 +699,6 @@ body .main_content .products_container .product_list_grid .grid_item .product .w
 body .main_content .products_container .product_list_grid .grid_item .product .wrap_thumb .product_thumb .product_primary_thumb .product_img_primary {
   width: 100%;
   height: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -727,6 +725,7 @@ body .main_content .products_container .product_list_grid .grid_item .product .p
   justify-content: flex-start;
   align-items: flex-start;
   height: 114px;
+  padding-left: 5px;
 }
 body .main_content .products_container .product_list_grid .grid_item .product .product_info .product_category {
   margin-top: 15px;
@@ -1062,6 +1061,7 @@ body .main_content .slide_show .slide_container .wrap_slide_item .slide_item .sl
   font-weight: 400;
   color: #999999;
   text-decoration: none;
+  margin-top: 10px;
 }
 body .main_content .slide_show .slide_container .wrap_slide_item .slide_item .slide_info .slide_title {
   font-family: Poppins, sans-serif;
@@ -1083,7 +1083,7 @@ body .main_content .slide_show .wrap_acticles {
 }
 body .main_content .slide_show .wrap_acticles .more_articles {
   min-height: 46px;
-  width: 320px;
+  width: 30%;
   margin: 0 auto 45px auto;
   background-color: #ffffff;
   font-family: Poppins, sans-serif;
@@ -1322,6 +1322,10 @@ body .footer .sidenav .sideBar_content .sideBar_menu .menu_item .social_media .s
     margin: 0 auto;
     width: calc(100% - 0.5rem);
   }
+  body .header {
+    box-sizing: border-box;
+    min-height: 165px;
+  }
   body .header .header__content {
     display: block;
   }
@@ -1424,6 +1428,10 @@ body .footer .sidenav .sideBar_content .sideBar_menu .menu_item .social_media .s
   body .main_content .products_container .product_list_grid .grid_item .product .wrap_thumb .product_thumb {
     height: auto;
   }
+  body .main_content .products_container .product_list_grid .grid_item .product .wrap_thumb .product_thumb .cta_btn {
+    width: 20%;
+    height: 40%;
+  }
   body .main_content .register_letter {
     height: auto;
     min-height: 220px;
@@ -1443,6 +1451,8 @@ body .footer .sidenav .sideBar_content .sideBar_menu .menu_item .social_media .s
     background-color: transparent;
     height: auto;
     margin: 1rem auto;
+    padding: 0 10px;
+    box-sizing: border-box;
   }
   body .main_content .register_letter .register_letter_email #input_register_email {
     line-height: 46px;
@@ -1452,7 +1462,8 @@ body .footer .sidenav .sideBar_content .sideBar_menu .menu_item .social_media .s
   body .main_content .register_letter .register_letter_email .subscribe {
     padding: 0;
     flex: none;
-    width: 100%;
+    margin-top: 10px;
+    width: 80%;
   }
   body .main_content .heading {
     min-height: 165px;
@@ -1480,7 +1491,7 @@ body .footer .sidenav .sideBar_content .sideBar_menu .menu_item .social_media .s
     margin-top: 20px;
   }
   body .main_content .slide_show .wrap_acticles .more_articles {
-    width: 100%;
+    width: 80%;
   }
   body .main_content .follow_us .slide_container {
     flex-direction: column;
@@ -1506,6 +1517,10 @@ body .footer .sidenav .sideBar_content .sideBar_menu .menu_item .social_media .s
   body .container {
     margin: 0 auto;
     width: calc(100% - 0.5rem);
+  }
+  body .header {
+    box-sizing: border-box;
+    height: 165px;
   }
   body .header .header__content {
     display: block;
@@ -1612,6 +1627,8 @@ body .footer .sidenav .sideBar_content .sideBar_menu .menu_item .social_media .s
     background-color: transparent;
     height: auto;
     margin: 1rem auto;
+    padding: 0 10px;
+    box-sizing: border-box;
   }
   body .main_content .register_letter .register_letter_email #input_register_email {
     line-height: 46px;
@@ -1621,7 +1638,8 @@ body .footer .sidenav .sideBar_content .sideBar_menu .menu_item .social_media .s
   body .main_content .register_letter .register_letter_email .subscribe {
     padding: 0;
     flex: none;
-    width: 100%;
+    margin-top: 10px;
+    width: 80%;
   }
   body .main_content .heading {
     min-height: 165px;
